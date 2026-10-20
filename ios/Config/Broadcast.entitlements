@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- App e extensão compartilham configurações e últimas ofertas. Se a conta gratuita recusar, apague esta chave:
+	     tudo funciona, só a extensão passa a usar os custos/metas padrão e a lista "Últimas ofertas" fica vazia. -->
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.com.innexar.meuganho</string>
+	</array>
+</dict>
+</plist>

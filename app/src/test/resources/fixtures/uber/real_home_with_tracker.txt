@@ -1,0 +1,15 @@
+# Amostra real EARNINGS_HISTORY (SCREEN) · app 312686 · uber-v1
+# parse V1: {"value":null,"confidence":null,"tree":"windows=1 nodes=163 depth=30 cutNodes=false cutDepth=false hidden=30 classes=FrameLayout:58,LinearLayout:39,ViewGroup:21,View:16,TextView:11"}
+Página inicial @id:profile_entry
+Modo de privacidade
+Pesquisar locais @id:search_entry_button
+Hoje às 9:29 @id:ub__summary_details_title
+Uber X 2 pontos @id:ub__summary_details_subtitle
+VER HISTÓRICO DE GANHOS @id:browse_card_detail_entry
+‹texto livre›
+R$ 21,40 @id:ub__earnings_tracker_counter_content_status
+Recursos de segurança @id:ub__safety_toolkit_button_container
+Reporte um problema no mapa @id:ub__ugc_map_button_icon
+Tendências de ganhos @id:map_control_earnings_trends
+1-6 min @id:map_marker_title
+1-2 min @id:map_marker_title

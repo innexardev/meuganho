@@ -1,0 +1,8 @@
+# Amostra real UNKNOWN (UNKNOWN) · 01/10/2026 07:39:18
+343 @id:share_track_road_indicate_txt
+m @id:share_track_road_indicate_txt_unit
+‹texto› @id:share_track_road_name_txt
+‹texto› 247, ‹texto› @id:map_nav_dest_address
+0 @id:current_speed_tv
+km/h @id:current_speed_unit_tv
+‹texto›

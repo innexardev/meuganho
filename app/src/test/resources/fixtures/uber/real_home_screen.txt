@@ -1,0 +1,18 @@
+# Amostra real UNKNOWN (UNKNOWN) · app 312686 · uber-v1
+# parse V1: {"value":null,"confidence":null}
+Alta demanda aqui @id:header_text_view
+‹texto livre› @id:paragraph_text_view
+‹texto›
+Ganhos
+‹texto livre›
+‹texto livre›
+Página inicial @id:glide_bottom_nav_home
+Página inicial @id:navigation_bar_item_large_label_view
+‹texto› @id:glide_bottom_nav_opportunities
+‹texto› @id:navigation_bar_item_small_label_view
+Ganhos @id:glide_bottom_nav_earnings
+Ganhos @id:navigation_bar_item_small_label_view
+Caixa de entrada @id:glide_bottom_nav_inbox
+Caixa de entrada @id:navigation_bar_item_small_label_view
+‹texto› @id:glide_bottom_nav_menu
+‹texto› @id:navigation_bar_item_small_label_view

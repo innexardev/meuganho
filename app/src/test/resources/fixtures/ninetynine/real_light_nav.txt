@@ -1,0 +1,5 @@
+# Amostra real UNKNOWN (UNKNOWN) · 30/09/2026 07:18:54 · app 1207105416
+440 m @id:tv_maprouter_light_nav_road_eda
+Vire à esquerda @id:tv_maprouter_light_nav_turn_name
+‹texto›
+Mapa do ‹texto›

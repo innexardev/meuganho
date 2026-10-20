@@ -1,0 +1,16 @@
+# Amostra real IN_TRIP (SCREEN) · 30/09/2026 06:35:00 · app 312686
+‹texto› @id:ub__nav_maneuver_text
+15 m @id:ub__nav_maneuver_distance
+‹texto livre› @id:ub__nav_address_view_poi_text
+‹texto› - SP, 11711-120 @id:ub__nav_address_view_address_text
+60 @id:ub__speed_limit
+‹texto› @id:ub__speed_limit_view_title
+Recursos de segurança @id:ub__safety_toolkit_button_container
+Reporte um problema no mapa @id:ub__ugc_map_button_icon
+Navegar @id:nav_text
+Não é possível ficar offline @id:status_assistant_overlay_text
+‹texto› @id:preferences_status_assistant_action_icon
+Filtro de destino desativado @id:status_label_leading
+Procurando viagens @id:key_info_label
+‹texto› @id:status_assistant_agenda_button
+‹texto livre›

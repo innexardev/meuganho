@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<!-- A página é servida em /meuganho (sem barra): links relativos resolvem a partir daqui. -->
+<base href="/meuganho/">
+<title>MeuGanho — Download para Android</title>
+<meta name="description" content="Computador de bordo financeiro para motoristas de Uber e 99.">
+<style>
+  :root { --bg:#0c0a09; --card:rgba(255,255,255,.05); --line:rgba(255,255,255,.1); --text:rgba(255,255,255,.8);
+          --muted:rgba(255,255,255,.6); --brand:#2dd4bf; --brand-ink:#04211d; --warn:#fcd34d; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:64px 20px; }
+  .eyebrow { color:var(--brand); font-size:13px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; margin:0 0 8px; }
+  h1 { color:#fff; font-size:44px; line-height:1.1; margin:0 0 12px; }
+  h2 { color:#fff; font-size:22px; margin:0 0 12px; }
+  .lead { font-size:18px; margin:0 0 32px; }
+  .card { border:1px solid var(--line); background:var(--card); border-radius:16px; padding:22px; margin-bottom:24px; }
+  .warn { border-color:rgba(252,211,77,.3); background:rgba(252,211,77,.05); }
+  .warn h2 { color:var(--warn); font-size:18px; }
+  .btn { display:flex; min-height:56px; align-items:center; justify-content:center; border-radius:12px; background:var(--brand);
+         color:var(--brand-ink); font-size:18px; font-weight:800; text-decoration:none; padding:0 24px; }
+  .btn:hover { filter:brightness(1.08); }
+  .small { font-size:14px; color:var(--muted); }
+  .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); margin-bottom:24px; }
+  .grid .card { margin:0; }
+  .grid h3 { color:#fff; margin:0 0 4px; font-size:16px; }
+  ol, ul { padding-left:22px; }
+  li { margin-bottom:8px; }
+  code { word-break:break-all; font-size:13px; }
+  a { color:var(--brand); }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Android · versão {{VERSION}} · em testes</p>
+  <h1>MeuGanho</h1>
+  <p class="lead">Computador de bordo financeiro para motoristas de Uber e 99. Mostra se a corrida vale a pena antes de aceitar e quanto você realmente ganhou no fim do dia.</p>
+
+  <div class="card">
+    <a class="btn" href="{{APK_URL}}" download>Baixar APK ({{SIZE_MB}} MB)</a>
+    <p class="small">Android 8.0 ou superior. Gratuito, sem anúncios, sem cadastro. Depois de instalado, o app se atualiza sozinho.</p>
+    <p class="small"><strong>Novidades:</strong> {{NOTES}}</p>
+  </div>
+
+  <div class="card warn">
+    <h2>Versão de testes</h2>
+    <p>A leitura automática das telas do Uber e da 99 está sendo calibrada. Quando o app não tem certeza de um valor, ele marca como <strong>pendente</strong> e pede sua confirmação em vez de adivinhar.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card"><h3>Antes da corrida</h3><p class="small">R$/km, R$/hora, combustível e resultado de cada oferta.</p></div>
+    <div class="card"><h3>Durante</h3><p class="small">Acompanha busca, espera e corrida e mede os km pelo GPS.</p></div>
+    <div class="card"><h3>Depois</h3><p class="small">Valor real, comparação com a oferta e conferência com o app.</p></div>
+    <div class="card"><h3>No dia</h3><p class="small">Faturamento, resultado estimado, metas, km vazio e Uber x 99.</p></div>
+  </div>
+
+  <div class="card">
+    <h2>Como instalar</h2>
+    <ol>
+      <li>Toque em <strong>Baixar APK</strong> neste celular.</li>
+      <li>Se o <strong>Play Protect</strong> bloquear: Play Store &gt; sua foto &gt; Play Protect &gt; engrenagem &gt; desligue "Verificar apps", instale e ligue de novo.</li>
+      <li>Abra o MeuGanho e siga <strong>Permissões</strong>. Se a Acessibilidade estiver cinza: Configurações &gt; Apps &gt; MeuGanho &gt; ⋮ &gt; "Permitir configurações restritas".</li>
+      <li>Cadastre o veículo, ajuste o preço do combustível e inicie um turno.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Privacidade</h2>
+    <ul>
+      <li>Seus valores, corridas e turnos ficam só no celular.</li>
+      <li>A Acessibilidade lê apenas o Uber Driver e o 99 Motorista e nunca toca em botões.</li>
+      <li>Para calibrar a leitura, o app envia amostras das telas <strong>sem nomes, endereços ou recados</strong>.</li>
+      <li>Para descobrir os melhores horários e regiões, envia os números das ofertas e corridas (valor, km, tempo, horário) com a <strong>região aproximada (~1 km)</strong>. Nunca endereço ou trajeto.</li>
+      <li>Os dois envios podem ser desligados em Configurações. Internet é usada só para isso e para verificar atualizações.</li>
+    </ul>
+  </div>
+
+  <div class="card small">
+    <h2>Versões</h2>
+    <ul>{{HISTORY}}</ul>
+    <p>SHA-256 do APK atual: <code>{{SHA256}}</code></p>
+    <p>Certificado de assinatura: <code>69:E6:46:A3:01:61:8E:D6:0C:D6:50:DA:EE:35:2B:7F:62:84:2A:D8:DD:17:0E:AE:A7:12:FC:91:90:1A:ED:EE</code></p>
+    <p><a href="https://innexar.com.br">Innexar</a></p>
+  </div>
+</main>
+</body>
+</html>

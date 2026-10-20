@@ -1,0 +1,918 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "8b34196a7d06b28f6fbb3fc531fb71da",
+    "entities": [
+      {
+        "tableName": "vehicles",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `manufacturer` TEXT NOT NULL, `model` TEXT NOT NULL, `version` TEXT NOT NULL, `year` INTEGER NOT NULL, `fuelType` TEXT NOT NULL, `odometerKm` INTEGER NOT NULL, `cityKmPerLiter` REAL NOT NULL, `highwayKmPerLiter` REAL NOT NULL, `averageKmPerLiter` REAL NOT NULL, `ethanolKmPerLiter` REAL, `maintenanceCentsPerKm` REAL NOT NULL, `depreciationCentsPerKm` REAL NOT NULL, `isActive` INTEGER NOT NULL, `createdAt` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "manufacturer",
+            "columnName": "manufacturer",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "model",
+            "columnName": "model",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "year",
+            "columnName": "year",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fuelType",
+            "columnName": "fuelType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "odometerKm",
+            "columnName": "odometerKm",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cityKmPerLiter",
+            "columnName": "cityKmPerLiter",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "highwayKmPerLiter",
+            "columnName": "highwayKmPerLiter",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "averageKmPerLiter",
+            "columnName": "averageKmPerLiter",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ethanolKmPerLiter",
+            "columnName": "ethanolKmPerLiter",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "maintenanceCentsPerKm",
+            "columnName": "maintenanceCentsPerKm",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "depreciationCentsPerKm",
+            "columnName": "depreciationCentsPerKm",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isActive",
+            "columnName": "isActive",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "createdAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "shifts",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vehicleId` INTEGER, `startedAt` INTEGER NOT NULL, `endedAt` INTEGER, `startOdometerKm` INTEGER, `endOdometerKm` INTEGER, `platforms` TEXT NOT NULL, `pausedMillis` INTEGER NOT NULL, `pausedAt` INTEGER, `emptyMeters` INTEGER NOT NULL, `pickupMeters` INTEGER NOT NULL, `paidMeters` INTEGER NOT NULL, `fuelPriceCentsPerLiter` INTEGER NOT NULL, `notes` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vehicleId",
+            "columnName": "vehicleId",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "startedAt",
+            "columnName": "startedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "endedAt",
+            "columnName": "endedAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "startOdometerKm",
+            "columnName": "startOdometerKm",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "endOdometerKm",
+            "columnName": "endOdometerKm",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "platforms",
+            "columnName": "platforms",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pausedMillis",
+            "columnName": "pausedMillis",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pausedAt",
+            "columnName": "pausedAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "emptyMeters",
+            "columnName": "emptyMeters",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pickupMeters",
+            "columnName": "pickupMeters",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "paidMeters",
+            "columnName": "paidMeters",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fuelPriceCentsPerLiter",
+            "columnName": "fuelPriceCentsPerLiter",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "notes",
+            "columnName": "notes",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_shifts_startedAt",
+            "unique": false,
+            "columnNames": [
+              "startedAt"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_shifts_startedAt` ON `${TABLE_NAME}` (`startedAt`)"
+          }
+        ]
+      },
+      {
+        "tableName": "offers",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `shiftId` INTEGER, `platform` TEXT NOT NULL, `detectedAt` INTEGER NOT NULL, `fingerprint` TEXT NOT NULL, `offeredCents` INTEGER, `surgeCents` INTEGER, `category` TEXT, `pickupMeters` INTEGER, `pickupSeconds` INTEGER, `tripMeters` INTEGER, `tripSeconds` INTEGER, `fieldConfidence` TEXT NOT NULL, `confidence` TEXT NOT NULL, `status` TEXT NOT NULL, `reasons` TEXT NOT NULL, `outcome` TEXT NOT NULL, `parserVersion` TEXT NOT NULL, `sourceAppVersion` INTEGER NOT NULL, `channel` TEXT NOT NULL, `rawSnapshot` TEXT, `correctedCents` INTEGER, `reviewedAt` INTEGER, `cell` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shiftId",
+            "columnName": "shiftId",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "platform",
+            "columnName": "platform",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "detectedAt",
+            "columnName": "detectedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fingerprint",
+            "columnName": "fingerprint",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "offeredCents",
+            "columnName": "offeredCents",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "surgeCents",
+            "columnName": "surgeCents",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "category",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "pickupMeters",
+            "columnName": "pickupMeters",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "pickupSeconds",
+            "columnName": "pickupSeconds",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "tripMeters",
+            "columnName": "tripMeters",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "tripSeconds",
+            "columnName": "tripSeconds",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "fieldConfidence",
+            "columnName": "fieldConfidence",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "confidence",
+            "columnName": "confidence",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "reasons",
+            "columnName": "reasons",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "outcome",
+            "columnName": "outcome",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "parserVersion",
+            "columnName": "parserVersion",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceAppVersion",
+            "columnName": "sourceAppVersion",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "channel",
+            "columnName": "channel",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rawSnapshot",
+            "columnName": "rawSnapshot",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "correctedCents",
+            "columnName": "correctedCents",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "reviewedAt",
+            "columnName": "reviewedAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "cell",
+            "columnName": "cell",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_offers_detectedAt",
+            "unique": false,
+            "columnNames": [
+              "detectedAt"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_offers_detectedAt` ON `${TABLE_NAME}` (`detectedAt`)"
+          },
+          {
+            "name": "index_offers_status",
+            "unique": false,
+            "columnNames": [
+              "status"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_offers_status` ON `${TABLE_NAME}` (`status`)"
+          }
+        ]
+      },
+      {
+        "tableName": "trips",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `shiftId` INTEGER, `offerId` INTEGER, `platform` TEXT NOT NULL, `state` TEXT NOT NULL, `status` TEXT NOT NULL, `acceptedAt` INTEGER NOT NULL, `pickupArrivedAt` INTEGER, `startedAt` INTEGER, `endedAt` INTEGER, `estimatedCents` INTEGER, `estPickupMeters` INTEGER, `estPickupSeconds` INTEGER, `estTripMeters` INTEGER, `estTripSeconds` INTEGER, `finalCents` INTEGER, `valueSource` TEXT NOT NULL, `correctedCents` INTEGER, `reviewedAt` INTEGER, `gpsPickupMeters` INTEGER NOT NULL, `gpsPaidMeters` INTEGER NOT NULL, `manualMeters` INTEGER, `reasons` TEXT NOT NULL, `isManual` INTEGER NOT NULL, `endCell` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shiftId",
+            "columnName": "shiftId",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "offerId",
+            "columnName": "offerId",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "platform",
+            "columnName": "platform",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "state",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "acceptedAt",
+            "columnName": "acceptedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pickupArrivedAt",
+            "columnName": "pickupArrivedAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "startedAt",
+            "columnName": "startedAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "endedAt",
+            "columnName": "endedAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "estimatedCents",
+            "columnName": "estimatedCents",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "estPickupMeters",
+            "columnName": "estPickupMeters",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "estPickupSeconds",
+            "columnName": "estPickupSeconds",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "estTripMeters",
+            "columnName": "estTripMeters",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "estTripSeconds",
+            "columnName": "estTripSeconds",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "finalCents",
+            "columnName": "finalCents",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "valueSource",
+            "columnName": "valueSource",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "correctedCents",
+            "columnName": "correctedCents",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "reviewedAt",
+            "columnName": "reviewedAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "gpsPickupMeters",
+            "columnName": "gpsPickupMeters",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gpsPaidMeters",
+            "columnName": "gpsPaidMeters",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "manualMeters",
+            "columnName": "manualMeters",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "reasons",
+            "columnName": "reasons",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isManual",
+            "columnName": "isManual",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "endCell",
+            "columnName": "endCell",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_trips_acceptedAt",
+            "unique": false,
+            "columnNames": [
+              "acceptedAt"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_trips_acceptedAt` ON `${TABLE_NAME}` (`acceptedAt`)"
+          },
+          {
+            "name": "index_trips_shiftId",
+            "unique": false,
+            "columnNames": [
+              "shiftId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_trips_shiftId` ON `${TABLE_NAME}` (`shiftId`)"
+          },
+          {
+            "name": "index_trips_offerId",
+            "unique": false,
+            "columnNames": [
+              "offerId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_trips_offerId` ON `${TABLE_NAME}` (`offerId`)"
+          }
+        ]
+      },
+      {
+        "tableName": "fuel_logs",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vehicleId` INTEGER, `at` INTEGER NOT NULL, `odometerKm` INTEGER NOT NULL, `fuelType` TEXT NOT NULL, `priceCentsPerLiter` INTEGER NOT NULL, `liters` REAL NOT NULL, `totalCents` INTEGER NOT NULL, `fullTank` INTEGER NOT NULL, `note` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vehicleId",
+            "columnName": "vehicleId",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "at",
+            "columnName": "at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "odometerKm",
+            "columnName": "odometerKm",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fuelType",
+            "columnName": "fuelType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "priceCentsPerLiter",
+            "columnName": "priceCentsPerLiter",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "liters",
+            "columnName": "liters",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalCents",
+            "columnName": "totalCents",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fullTank",
+            "columnName": "fullTank",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "note",
+            "columnName": "note",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_fuel_logs_at",
+            "unique": false,
+            "columnNames": [
+              "at"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_fuel_logs_at` ON `${TABLE_NAME}` (`at`)"
+          }
+        ]
+      },
+      {
+        "tableName": "expenses",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `at` INTEGER NOT NULL, `shiftId` INTEGER, `category` TEXT NOT NULL, `amountCents` INTEGER NOT NULL, `note` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "at",
+            "columnName": "at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shiftId",
+            "columnName": "shiftId",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "amountCents",
+            "columnName": "amountCents",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "note",
+            "columnName": "note",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_expenses_at",
+            "unique": false,
+            "columnNames": [
+              "at"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_expenses_at` ON `${TABLE_NAME}` (`at`)"
+          }
+        ]
+      },
+      {
+        "tableName": "goals",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `period` TEXT NOT NULL, `kind` TEXT NOT NULL, `targetCents` INTEGER NOT NULL, `isActive` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "period",
+            "columnName": "period",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kind",
+            "columnName": "kind",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "targetCents",
+            "columnName": "targetCents",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isActive",
+            "columnName": "isActive",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "platform_totals",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `platform` TEXT NOT NULL, `epochDay` INTEGER NOT NULL, `totalCents` INTEGER NOT NULL, `capturedAt` INTEGER NOT NULL, `parserVersion` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "platform",
+            "columnName": "platform",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "epochDay",
+            "columnName": "epochDay",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalCents",
+            "columnName": "totalCents",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "capturedAt",
+            "columnName": "capturedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "parserVersion",
+            "columnName": "parserVersion",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_platform_totals_platform_epochDay",
+            "unique": false,
+            "columnNames": [
+              "platform",
+              "epochDay"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_platform_totals_platform_epochDay` ON `${TABLE_NAME}` (`platform`, `epochDay`)"
+          }
+        ]
+      },
+      {
+        "tableName": "diagnostic_samples",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `capturedAt` INTEGER NOT NULL, `platform` TEXT NOT NULL, `screenType` TEXT NOT NULL, `reason` TEXT NOT NULL, `parserVersion` TEXT NOT NULL, `sourceAppVersion` INTEGER NOT NULL, `sanitizedText` TEXT NOT NULL, `parseSummary` TEXT NOT NULL, `uploaded` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "capturedAt",
+            "columnName": "capturedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "platform",
+            "columnName": "platform",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "screenType",
+            "columnName": "screenType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "reason",
+            "columnName": "reason",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "parserVersion",
+            "columnName": "parserVersion",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceAppVersion",
+            "columnName": "sourceAppVersion",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sanitizedText",
+            "columnName": "sanitizedText",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "parseSummary",
+            "columnName": "parseSummary",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "uploaded",
+            "columnName": "uploaded",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_diagnostic_samples_uploaded",
+            "unique": false,
+            "columnNames": [
+              "uploaded"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_diagnostic_samples_uploaded` ON `${TABLE_NAME}` (`uploaded`)"
+          },
+          {
+            "name": "index_diagnostic_samples_capturedAt",
+            "unique": false,
+            "columnNames": [
+              "capturedAt"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_diagnostic_samples_capturedAt` ON `${TABLE_NAME}` (`capturedAt`)"
+          }
+        ]
+      },
+      {
+        "tableName": "sync_outbox",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`kind` TEXT NOT NULL, `localId` INTEGER NOT NULL, `createdAt` INTEGER NOT NULL, PRIMARY KEY(`kind`, `localId`))",
+        "fields": [
+          {
+            "fieldPath": "kind",
+            "columnName": "kind",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "localId",
+            "columnName": "localId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "createdAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "kind",
+            "localId"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8b34196a7d06b28f6fbb3fc531fb71da')"
+    ]
+  }
+}

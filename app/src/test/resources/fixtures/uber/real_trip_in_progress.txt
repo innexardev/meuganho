@@ -1,0 +1,17 @@
+# Amostra real UNKNOWN (UNKNOWN) · app 312686 · uber-v1
+# parse V1: {"value":null,"confidence":null,"tree":"windows=1 nodes=118 depth=27 cutNodes=false cutDepth=false hidden=12 classes=FrameLayout:51,ViewGroup:19,LinearLayout:16,TextView:12,View:8"}
+‹texto› de ‹texto› @id:map_marker_title
+40 @id:ub__current_speed
+30 @id:ub__speed_limit
+LIMITE @id:ub__speed_limit_view_title
+Recursos de segurança @id:ub__safety_toolkit_button_container
+Reporte um problema no mapa @id:ub__ugc_map_button_icon
+‹texto› @id:ub__current_street_name_tv
+‹texto› de ‹texto› @id:ub__nav_maneuver_text
+70 m @id:ub__nav_maneuver_distance
+Não é possível ficar offline @id:status_assistant_overlay_text
+‹texto› @id:preferences_status_assistant_action_icon
+2 min @id:status_label_leading
+1,4 km @id:status_label_trailing
+Destino de ‹texto› @id:key_info_label
+‹texto› @id:status_assistant_agenda_button

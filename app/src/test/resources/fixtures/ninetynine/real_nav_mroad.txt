@@ -1,0 +1,7 @@
+# Amostra real UNKNOWN (UNKNOWN) · 01/10/2026 07:12:21
+148 @id:mRoadIndicateNumberTv
+m @id:mRoadIndicateUnitTv
+R. P @id:mRoadNameTv
+58 @id:current_speed_tv
+km/h @id:current_speed_unit_tv
+R. ‹texto›

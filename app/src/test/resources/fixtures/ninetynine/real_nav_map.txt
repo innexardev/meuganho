@@ -1,0 +1,9 @@
+# Amostra real UNKNOWN (UNKNOWN) · app 1207105416 · 99-v1
+# parse V1: {"value":null,"confidence":null,"tree":"windows=1 nodes=75 depth=16 cutNodes=false cutDepth=false hidden=7 classes=FrameLayout:23,RelativeLayout:15,View:11,LinearLayout:11,ImageView:8 census=sys:com.android.systemui:children=1:title=Barra de navegação;sys:com.samsung.android.app.cocktailbarservice:children=1:title=-;sys:com.android.systemui:children=3:title=Barra de status;app:com.app99.driver:children=2:title=99 Motorista"}
+183 @id:share_track_road_indicate_txt
+m @id:share_track_road_indicate_txt_unit
+Av. do ‹texto› @id:share_track_road_name_txt
+Av. do ‹texto› @id:next_next_turn_name_tv
+17 @id:current_speed_tv
+km/h @id:current_speed_unit_tv
+R. ‹texto›

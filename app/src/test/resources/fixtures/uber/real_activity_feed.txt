@@ -1,0 +1,20 @@
+# Amostra real UNKNOWN (UNKNOWN) · app 312686 · uber-v1
+# parse V1: {"value":null,"confidence":null,"tree":"windows=1 nodes=108 depth=23 cutNodes=false cutDepth=false hidden=10 classes=FrameLayout:31,TextView:14,ViewGroup:13,LinearLayout:13,ImageView:11"}
+‹texto› @id:pill_button
+‹texto› @id:pill_button
+‹texto› @id:pill_button
+‹texto› @id:pill_button
+R$ 12,89 @id:ub__styled_icon_link_title
+‹texto› X⁩ · ⁨18 min 17 segundos⁩ · ⁨8.00 km⁩ @id:ub__styled_icon_link_subtitle
+8:59 @id:ub__styled_icon_link_tertiary_title
+‹texto livre› @id:ub__pick_up_text
+‹texto livre› @id:ub__drop_off_text
+R$ 11,56 @id:ub__styled_icon_link_title
+‹texto› @id:ub_badge_text_view
+‹texto› X⁩ · ⁨12 min 54 segundos⁩ · ⁨4.96 km⁩ @id:ub__styled_icon_link_subtitle
+7:32 @id:ub__styled_icon_link_tertiary_title
+‹texto livre› @id:ub__pick_up_text
+‹texto livre› @id:ub__drop_off_text
+R$ 7,68 @id:ub__styled_icon_link_title
+‹texto› · ⁨6 min 39 segundos⁩ · ⁨2.76 km⁩ @id:ub__styled_icon_link_subtitle
+7:25 @id:ub__styled_icon_link_tertiary_title

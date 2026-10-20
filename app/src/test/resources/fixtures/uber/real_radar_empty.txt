@@ -1,0 +1,12 @@
+# Amostra real UNKNOWN (UNKNOWN) · app 312686 · uber-v1
+# parse V1: {"value":null,"confidence":null,"tree":"windows=1 nodes=75 depth=19 cutNodes=false cutDepth=false hidden=19 classes=ViewGroup:23,LinearLayout:17,FrameLayout:14,TextView:9,View:9"}
++R$ 4,50 @id:map_marker_title
++R$ 4,75 @id:map_marker_title
++R$ 5,75 @id:map_marker_title
++R$ 6 @id:map_marker_title
++R$ 3 @id:map_marker_title
+1 min @id:map_marker_title
+Nenhuma solicitação no momento @id:base_headline_text
+Avisaremos quando houver mais solicitações @id:base_paragraph_text
+Voltar
+Radar de viagens

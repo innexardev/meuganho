@@ -1,0 +1,61 @@
+# Projeto do iPhone gerado pelo XcodeGen:  brew install xcodegen && xcodegen
+# Escopo: SÓ leitura das ofertas (Uber e 99) e cálculo. Lógica = porte do Android (pasta Shared).
+name: MeuGanho
+options:
+  bundleIdPrefix: com.innexar
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    DEVELOPMENT_TEAM: ""            # Xcode > Signing & Capabilities > escolha seu Apple ID (conta gratuita serve)
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.9"
+targets:
+  MeuGanho:
+    type: application
+    platform: iOS
+    sources: [App, Shared]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.innexar.meuganho.ios
+        CODE_SIGN_ENTITLEMENTS: Config/App.entitlements
+        INFOPLIST_KEY_CFBundleDisplayName: MeuGanho
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - target: Broadcast
+  Broadcast:
+    type: app-extension
+    platform: iOS
+    sources: [Broadcast, Shared]
+    info:
+      path: Config/Broadcast-Info.plist
+      properties:
+        CFBundleDisplayName: MeuGanho
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.broadcast-services-upload
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).SampleHandler
+          RPBroadcastProcessMode: RPBroadcastProcessModeSampleBuffer
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.innexar.meuganho.ios.broadcast
+        CODE_SIGN_ENTITLEMENTS: Config/Broadcast.entitlements
+  MeuGanhoTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Tests
+      - path: Shared
+        excludes: [SampleUploader.swift, OfferNotifier.swift, Secrets.swift]
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  MeuGanho:
+    build:
+      targets: { MeuGanho: all, Broadcast: all }
+    test:
+      targets: [MeuGanhoTests]

@@ -1,0 +1,32 @@
+‹texto›
+‹texto›
+‹texto›
+29-09-2026
+‹texto› R$0,00
+99Multiplica
+R$4,92
+17:48
+Pop
+-R$12,20
+17:47
+-
+Dinheiro
+Pop
+R$19,40
+17:23
+-
+PIX
+Pop
+-R$7,76
+17:23
+-
+Dinheiro
+Negocia
+R$8,19
+17:05
+Negocia
+R$7,79
+16:33
+Compensação aprovada
+R$8,80
+16:12

@@ -1,0 +1,8 @@
+# Amostra real IN_TRIP (SCREEN) · 30/09/2026 08:07:43 · app 312686
+Recursos de segurança @id:ub__safety_toolkit_button_container
+Reporte um problema no mapa @id:ub__ugc_map_button_icon
+Não é possível ficar offline @id:status_assistant_overlay_text
+‹texto› @id:preferences_status_assistant_action_icon
+Filtro de destino desativado @id:status_label_leading
+Procurando viagens @id:key_info_label
+‹texto› @id:status_assistant_agenda_button

@@ -1,0 +1,40 @@
+# Build
+.gradle/
+build/
+app/build/
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+local.properties
+
+# Segredos
+*.jks
+*.keystore
+keystore.properties
+
+# Dados pessoais / logs: nunca versionar corridas reais
+*.log
+backups/
+meuganho-backup-*.json
+meuganho-*.csv
+*.db
+*.db-shm
+*.db-wal
+
+# Kotlin / pacote do iPhone
+.kotlin/
+.ios_package_token
+
+# iOS (gerado pelo XcodeGen / Xcode)
+ios/*.xcodeproj/
+ios/Config/Broadcast-Info.plist
+ios/build/
+xcuserdata/
+DerivedData/

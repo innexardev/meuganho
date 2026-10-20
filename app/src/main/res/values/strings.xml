@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MeuGanho</string>
+    <string name="accessibility_label">MeuGanho: leitura de ofertas</string>
+    <string name="accessibility_description">Lê o texto das telas do Uber Driver e do 99 Motorista para calcular R$/km, R$/hora e o resultado de cada oferta e corrida. Não lê nenhum outro app, não executa toques e não envia dados para fora do aparelho.</string>
+    <string name="notification_listener_label">MeuGanho: notificações Uber/99</string>
+</resources>

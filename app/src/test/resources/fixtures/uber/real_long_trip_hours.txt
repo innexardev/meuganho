@@ -1,0 +1,11 @@
+# Amostra real OFFER (OFFER) · app 312686 · uber-v1
+# parse V1: {"value":16481,"surge":null,"pickupM":1100,"pickupS":240,"tripM":72500,"tripS":1500,"category":null,"confidence":"LOW","fields":"valor=HIGH;km até passageiro=LOW;tempo até passageiro=LOW;km da viagem=LOW;tempo da viagem=LOW","status":"NEEDS_REVIEW","reasons":"Velocidade implícita da viagem improvável (174 km/h) | Busca/viagem identificadas pela ordem, sem âncora"}
+‹texto›
+‹texto›
+R$ 164,81
+4,86 (700)
+4 min (1.1 km)
+‹texto livre›
+1 h e 25 min (72.5 km)
+‹texto livre›
+Aceitar

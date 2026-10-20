@@ -1,0 +1,34 @@
+# Amostra real UNKNOWN (UNKNOWN) · app 1207105416 · 99-v1
+# parse V1: {"value":null,"confidence":null,"tree":"windows=1 nodes=97 depth=12 cutNodes=false cutDepth=false hidden=23 classes=TextView:41,View:34,LinearLayout:7,FrameLayout:6,RelativeLayout:3 census=sys:com.android.systemui:children=1:title=Barra de navegação;sys:com.samsung.android.app.cocktailbarservice:children=1:title=-;sys:com.android.systemui:children=3:title=Barra de status;app:com.app99.driver:children=3:title=99 Motorista"}
+‹texto› @id:title_bar_name
+‹texto› @id:titlebar_right_btn
+‹texto›
+29-09-2026
+‹texto› R$0,00
+99Multiplica
+R$4,92
+17:48
+Pop
+-R$12,20
+17:47
+-
+Dinheiro
+Pop
+R$19,40
+17:23
+-
+PIX
+Pop
+-R$7,76
+17:23
+-
+Dinheiro
+Negocia
+R$8,19
+17:05
+Negocia
+R$7,79
+16:33
+Compensação aprovada
+R$8,80
+16:12

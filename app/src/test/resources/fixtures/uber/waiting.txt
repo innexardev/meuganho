@@ -1,0 +1,3 @@
+# Uber · no local de embarque · esperado: WAITING_PASSENGER
+Aguardando ‹texto›
+Iniciar viagem

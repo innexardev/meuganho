@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <!-- O AAPT exige -v26 para <adaptive-icon>, mesmo com minSdk 26. -->
+    <issue id="ObsoleteSdkInt">
+        <ignore path="src/main/res/mipmap-anydpi-v26" />
+    </issue>
+    <!-- Versões fixadas de propósito (compatíveis com Kotlin 2.1.20). Atualizar em bloco, não por aviso. -->
+    <issue id="GradleDependency" severity="informational" />
+    <issue id="NewerVersionAvailable" severity="informational" />
+    <issue id="AndroidGradlePluginVersion" severity="informational" />
+</lint>

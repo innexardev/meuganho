@@ -1,0 +1,5 @@
+# Amostra real UNKNOWN (UNKNOWN) · app 312686 · uber-v1
+# parse V1: {"value":null,"confidence":null,"tree":"windows=1 nodes=52 depth=24 cutNodes=false cutDepth=false hidden=7 classes=FrameLayout:20,ViewGroup:12,LinearLayout:8,View:4,TextView:3"}
+Voltar
+Coletar pagamento
+R$ 38,96 @id:ub__collect_cash_overview_card_amount_value

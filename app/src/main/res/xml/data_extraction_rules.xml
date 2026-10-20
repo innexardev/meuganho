@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 12+: nada vai para o backup em nuvem do Google (dados financeiros e de
+  trabalho). A transferência direta entre aparelhos (troca de celular) é permitida,
+  pois é local e iniciada pelo próprio usuário.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="root" path="." />
+        <exclude domain="database" path="." />
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="file" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="." />
+        <include domain="file" path="." />
+    </device-transfer>
+</data-extraction-rules>

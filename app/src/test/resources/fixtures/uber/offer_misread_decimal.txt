@@ -1,0 +1,6 @@
+# Uber · vírgula perdida na leitura (R$ 2850) · esperado: NEEDS_REVIEW por R$/km absurdo
+UberX
+R$ 2850
+4 min (1,8 km) de distância
+Viagem de 24 min (12,4 km)
+Aceitar

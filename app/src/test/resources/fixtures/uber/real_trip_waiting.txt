@@ -1,0 +1,20 @@
+# Amostra real WAITING_PASSENGER (SCREEN) · app 312686 · uber-v1
+# parse V1: {"value":null,"confidence":null,"tree":"windows=1 nodes=175 depth=42 cutNodes=false cutDepth=false hidden=16 classes=FrameLayout:61,LinearLayout:38,ViewGroup:25,View:15,TextView:12"}
+40 @id:ub__speed_limit
+LIMITE @id:ub__speed_limit_view_title
+Recursos de segurança @id:ub__safety_toolkit_button_container
+Reporte um problema no mapa @id:ub__ugc_map_button_icon
+‹texto livre› @id:ub__current_street_name_tv
+Embarque em ‹texto› e ‹texto› de ‹texto› @id:ub__nav_address_view_poi_text
+‹texto livre› @id:ub__nav_address_view_address_text
+Não é possível ficar offline @id:status_assistant_overlay_text
+‹texto› @id:preferences_status_assistant_action_icon
+Encontro com ‹texto› @id:status_label_leading
+‹texto› @id:status_assistant_agenda_button
+Aguardando o usuário
+1:58
+present-screen-icon
+‹texto›
+‹texto›
+‹texto›
+‹texto› @id:map_marker_title

@@ -1,0 +1,18 @@
+Radar de Viagens
+2
+UberX
+R$ 5,51
+R$1,72/km aprox.
+8 min (2.5 km)
+‹texto›
+3 minutos (0.7 km)
+‹texto›
+Selecionar
+UberX
+R$ 9,72
+R$1,50/km aprox.
+10 min (4.0 km)
+‹texto›
+6 minutos (2.5 km)
+‹texto›
+Selecionar

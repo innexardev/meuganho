@@ -1,0 +1,4 @@
+# 99 · corrida finalizada · esperado: TRIP_COMPLETED, 16,40
+Corrida finalizada
+Você recebeu R$ 16,40
+Avalie ‹texto›

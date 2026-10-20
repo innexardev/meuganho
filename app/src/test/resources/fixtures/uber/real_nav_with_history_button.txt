@@ -1,0 +1,26 @@
+# Amostra real EARNINGS_HISTORY (SCREEN) · app 312686 · uber-v1
+# parse V1: {"value":null,"confidence":null,"tree":"windows=1 nodes=202 depth=31 cutNodes=false cutDepth=false hidden=26 classes=FrameLayout:73,LinearLayout:43,ViewGroup:20,TextView:20,View:19"}
+VER HISTÓRICO DE GANHOS @id:browse_card_detail_entry
+‹texto livre›
+‹texto› 10% em Ganhos @id:title_text
+‹texto livre› @id:title_text
+Ver os requisitos
+VER RESUMO SEMANAL @id:browse_card_detail_entry
+Página inicial @id:profile_entry
+R$ 88,14 @id:ub__earnings_tracker_counter_content_status
+HOJE @id:ub__earnings_tracker_label_text
+Pesquisar locais @id:search_entry_button
+60 @id:ub__speed_limit
+LIMITE @id:ub__speed_limit_view_title
+Recursos de segurança @id:ub__safety_toolkit_button_container
+Reporte um problema no mapa @id:ub__ugc_map_button_icon
+‹texto› @id:ub__current_street_name_tv
+‹texto› @id:ub__nav_maneuver_text
+110 m @id:ub__nav_maneuver_distance
+‹texto› @id:ub__nav_compound_maneuver_view
+Não é possível ficar offline @id:status_assistant_overlay_text
+‹texto› @id:preferences_status_assistant_action_icon
+2 min @id:status_label_leading
+0,5 km @id:status_label_trailing
+Encontro com ‹texto› @id:key_info_label
+‹texto› @id:status_assistant_agenda_button

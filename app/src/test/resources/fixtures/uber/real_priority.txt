@@ -1,0 +1,15 @@
+# Amostra real OFFER (OFFER) · app 312686 · uber-v1
+# parse V1: {"value":1177,"surge":192,"pickupM":5300,"pickupS":660,"tripM":3100,"tripS":360,"category":"Priority","confidence":"LOW","fields":"valor=HIGH;km até passageiro=LOW;tempo até passageiro=LOW;km da viagem=LOW;tempo da viagem=LOW","status":"NEEDS_REVIEW","reasons":"Busca/viagem identificadas pela ordem, sem âncora"}
+Priority
+‹texto›
+R$ 11,77
+R$1,40/km aprox.
+4,95 (258)
+‹texto›
++R$ 1,92 incluído para embarque prioritário
+11 min (5.3 km)
+‹texto livre›
+6 minutos (3.1 km)
+‹texto livre›
+Aceitar
+Status da viagem compartilhado com ‹texto› @id:snackbar_text

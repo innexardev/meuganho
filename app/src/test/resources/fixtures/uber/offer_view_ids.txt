@@ -1,0 +1,6 @@
+# Uber · layout com ids de view e sem palavras de âncora na busca · esperado: HIGH pelos ids
+Comfort @id:vehicle_type
+R$ 41,00 @id:fare_amount
+a 3 min (0,9 km) @id:pickup_eta
+Viagem: 32 min (21,3 km) @id:trip_eta
+Aceitar @id:accept_button

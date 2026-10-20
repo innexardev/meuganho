@@ -1,0 +1,11 @@
+# Amostra real OFFER (OFFER) · app 312686 · uber-v1
+# parse V1: {"cards":1,"card":0,"value":100,"surge":100,"pickupM":11200,"pickupS":1140,"tripM":7200,"tripS":720,"category":null,"confidence":"MEDIUM","fields":"valor=MEDIUM;km até passageiro=MEDIUM;tempo até passageiro=MEDIUM;km da viagem=MEDIUM;tempo da viagem=MEDIUM","status":"NEEDS_REVIEW","reasons":"valor: valor dentro de texto | Valor fora da faixa esperada | R$/km fora do possível","tree":"windows=2 nodes=50 depth=13 cutNodes=false cutDepth=false hidden=2 classes=LinearLayout:19,TextView:9,FrameLayout:6,ImageView:6,ViewGroup:4 | nodes=1 depth=0 cutNodes=false cutDepth=false hidden=0 classes=ImageView:1"}
+‹texto›
+R$1/km aprox.
+4,90 (440)
++R$ 1,00 incluído
+19 min (11.2 km)
+‹texto livre›
+12 minutos (7.2 km)
+‹texto livre›
+Selecionar

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Versão monocromática (ícones temáticos do Android 13+): o sistema aplica a cor. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M38.44,73.56 A22,22 0 1,1 69.56,73.56"
+        android:strokeWidth="3"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M38.44,73.56 A22,22 0 0,1 69.56,42.44"
+        android:strokeWidth="6"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeLineCap="round" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M64.96,47.04 L56.26,60.26 L51.74,55.74 Z M54,58m-4.2,0a4.2,4.2 0 1,0 8.4,0a4.2,4.2 0 1,0 -8.4,0" />
+</vector>

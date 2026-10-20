@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Símbolo MeuGanho: um mostrador de painel (direção/performance) cujo arco
+  preenchido e ponteiro sobem para a direita (ganho). Centro (54,58), raio 22,
+  dentro da zona segura de 66dp do ícone adaptativo.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Trilho do mostrador (270°) -->
+    <path
+        android:pathData="M38.44,73.56 A22,22 0 1,1 69.56,73.56"
+        android:strokeWidth="6"
+        android:strokeColor="#402EE6A6"
+        android:strokeLineCap="round" />
+    <!-- Arco preenchido até o ponteiro -->
+    <path
+        android:pathData="M38.44,73.56 A22,22 0 0,1 69.56,42.44"
+        android:strokeWidth="6"
+        android:strokeColor="#FF2EE6A6"
+        android:strokeLineCap="round" />
+    <!-- Ponteiro -->
+    <path
+        android:fillColor="#FFEAF0F6"
+        android:pathData="M64.96,47.04 L56.26,60.26 L51.74,55.74 Z" />
+    <path
+        android:fillColor="#FFEAF0F6"
+        android:pathData="M54,58m-4.2,0a4.2,4.2 0 1,0 8.4,0a4.2,4.2 0 1,0 -8.4,0" />
+    <path
+        android:fillColor="#FF0A0E13"
+        android:pathData="M54,58m-1.6,0a1.6,1.6 0 1,0 3.2,0a1.6,1.6 0 1,0 -3.2,0" />
+</vector>

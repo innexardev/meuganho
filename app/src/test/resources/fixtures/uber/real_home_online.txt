@@ -1,0 +1,12 @@
+# Amostra real IDLE (SCREEN) · app 312686 · uber-v1
+# parse V1: {"value":null,"confidence":null,"tree":"windows=1 nodes=110 depth=28 cutNodes=false cutDepth=false hidden=12 classes=FrameLayout:53,LinearLayout:17,ViewGroup:15,View:8,ImageView:6"}
+Página inicial @id:profile_entry
+R$ 0,00 @id:ub__earnings_tracker_counter_content_status
+Pesquisar locais @id:search_entry_button
+Recursos de segurança @id:ub__safety_toolkit_button_container
+Reporte um problema no mapa @id:ub__ugc_map_button_icon
+Tendências de ganhos @id:map_control_earnings_trends
+Não é possível ficar offline @id:status_assistant_overlay_text
+‹texto› @id:preferences_status_assistant_action_icon
+Você está online @id:status_label_leading
+‹texto› @id:status_assistant_agenda_button

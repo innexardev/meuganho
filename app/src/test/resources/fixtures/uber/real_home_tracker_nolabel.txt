@@ -1,0 +1,11 @@
+# Amostra real IDLE (SCREEN) · 30/09/2026 08:48:54 · app 312686
+Página inicial @id:profile_entry
+R$ 32,80 @id:ub__earnings_tracker_counter_content_status
+Pesquisar locais @id:search_entry_button
+Recursos de segurança @id:ub__safety_toolkit_button_container
+Reporte um problema no mapa @id:ub__ugc_map_button_icon
+Tendências de ganhos @id:map_control_earnings_trends
+Não é possível ficar offline @id:status_assistant_overlay_text
+‹texto› @id:preferences_status_assistant_action_icon
+Você está online @id:status_label_leading
+‹texto› @id:status_assistant_agenda_button

@@ -1,0 +1,21 @@
+# Amostra real WAITING_PASSENGER (SCREEN_OCR) · app 1207105416 · 99-v1
+# parse V1: {"value":null,"confidence":null,"tree":"ocr lines=19 ms=599"}
+16:53 O•
+O ‹texto› 4G+
+LTE2 l 56%
+Mercadg se ‹texto›
+reço ‹texto›
+zaria
+s ‹texto›
+‹texto›
+‹texto›
+‹texto›
+de ‹texto›
+‹texto›
+km/h
+A
+R
+‹texto›
+4,92* 847 corridas
+Iniciar corrida
+<

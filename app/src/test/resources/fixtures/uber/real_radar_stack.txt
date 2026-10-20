@@ -1,0 +1,19 @@
+# Radar de Viagens com 2 cartões empilhados (valores dos prints reais) · cada cartão é um bloco clicável (@g)
+Radar de Viagens
+2
+UberX @g:10
+R$ 5,51 @g:10
+R$1,72/km aprox. @g:10
+8 min (2.5 km) @g:10
+‹texto› @g:10
+3 minutos (0.7 km) @g:10
+‹texto› @g:10
+Selecionar @g:10
+UberX @g:40
+R$ 9,72 @g:40
+R$1,50/km aprox. @g:40
+10 min (4.0 km) @g:40
+‹texto› @g:40
+6 minutos (2.5 km) @g:40
+‹texto› @g:40
+Selecionar @g:40

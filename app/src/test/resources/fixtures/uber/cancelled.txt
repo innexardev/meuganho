@@ -1,0 +1,3 @@
+# Uber · cancelamento · esperado: TRIP_CANCELLED
+Viagem cancelada
+O passageiro cancelou a viagem
